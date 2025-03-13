@@ -7,9 +7,15 @@ fetch("https://rest-api-gem-back.onrender.com/api/users")
       const user = data[currentIndex];
       document.getElementById("name").innerText = user.name;
       document.getElementById("desc").innerText = user.desc;
-      document.getElementById("value").innerText = user.value;
       document.getElementById("price").innerHTML = user.price;
       document.getElementById("image").src = "http://localhost:3000" + user.url;
+
+      document
+        .querySelectorAll("button")
+        .forEach((btn) => btn.classList.remove("active"));
+
+      const buttons = ["amethyst", "emerald", "ruby"];
+      document.getElementById(buttons[currentIndex]).classList.add("active");
     }
 
     updateContent();

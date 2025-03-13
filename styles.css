@@ -1,0 +1,108 @@
+@import url("https://fonts.cdnfonts.com/css/giom-mod");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #0b0a0a;
+  color: white;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "Giom Mod", sans-serif;
+}
+
+button {
+  z-index: 2;
+  margin-top: 2vh;
+  left: 2vw;
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  padding: 1vh 2vh;
+  margin-left: 0.4vw;
+  border-radius: 50px;
+}
+button:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: black;
+  transition: 0.1s;
+}
+button.active {
+  background: rgb(255, 255, 255);
+  color: black;
+  text-shadow: 0.7px 0px 0px black;
+}
+
+#gem-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  margin-left: 10vw;
+}
+#image-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+#image {
+  width: 35vw;
+  height: 35vw;
+  border-radius: 10px;
+}
+#image-info-container p {
+  color: rgb(104, 104, 104);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+#gem-info-container {
+  margin-left: 2vw;
+  padding: 4vh;
+  width: 35%;
+}
+
+#name {
+  font-size: 6rem;
+  font-family: "Giom Mod", sans-serif;
+  position: relative;
+  right: 0.6vw;
+  font-weight: 100;
+  margin-bottom: 2vh;
+}
+#desc,
+#value {
+  font-size: 1rem;
+  line-height: 2.7vh;
+}
+
+#price {
+  color: rgb(157, 157, 157);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#name,
+#desc,
+#value,
+#price {
+  padding: 2vh;
+}

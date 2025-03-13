@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Gemstones</h1>
+    <p>Explore the</p>
+    <h2>Gemstones</h2>
     <button id="amethyst">Amethyst</button>
     <button id="emerald">Emerald</button>
     <button id="ruby">Ruby</button>
 
-    <ul id="users-list">
-      <!-- API info is placed here -->
-      <h1 id="name"></h1>
-      <p id="desc"></p>
-      <p id="value"></p>
-      <p id="price"></p>
-      <img id="image" />
-    </ul>
+    <!-- API info is placed here -->
+    <section id="gem-container">
+      <section id="image-info-container">
+        <img id="image" />
+        <p>Image generated with ChatGPT</p>
+      </section>
+      <section id="gem-info-container">
+        <h1 id="name"></h1>
+        <p id="desc"></p>
+        <br />
+        <p id="price"></p>
+      </section>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
