@@ -1,4 +1,4 @@
-fetch("https://github.com/williamwestergard/rest-api/api/users")
+fetch("https://rest-api-gem-back.onrender.com/api/users")
   .then((response) => response.json())
   .then((data) => {
     let currentIndex = 0;
